@@ -222,7 +222,7 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
           min-width: ${F(80)}px;
           padding-horizontal: ${F(12)}px;
         `:Me`
-          height: ${F(43)}px;
+          height: ${F(48)}px;
           min-width: ${F(100)}px;
           padding-horizontal: ${F(20)}px;
         `};
