@@ -305,7 +305,7 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
   color: ${({color:e})=>e};
 `,KK=j(Uo)`
   color: ${({color:e})=>e};
-`,YK=$K;var c3=m(L());var ni=m(L());var fN=m(L());Rr();var qK=e=>e.map((t,r)=>fN.cloneElement(t,{key:r,style:Oe.OS==="web"?{position:"relative"}:{}})),rl=qK;var XK=({tags:e,tagAlign:t,title:r,footnote:n,image:i,subtitle:o,backgroundColor:a})=>ni.createElement(QK,{backgroundColor:a},ni.createElement(JK,null,ni.createElement(oY,{source:{uri:i}}),!!e.length&&ni.createElement(eY,{align:t},rl(e))),ni.createElement(tY,null,r?ni.createElement(rY,{numberOfLines:r.numberOfLines||2,color:r.color},r.text):null,o?ni.createElement(nY,{numberOfLines:o.numberOfLines||3,color:o.color},o.text):null,n?ni.createElement(iY,{numberOfLines:n.numberOfLines||999,color:n.color},n.text):null)),QK=j.View`
+`,YK=$K;var c3=m(L());var ni=m(L());var fN=m(L());Rr();var qK=e=>e.map((t,r)=>fN.cloneElement(t,{key:r,style:Oe.OS==="web"?{position:"relative"}:{}})),rl=qK;var XK=({tags:e,tagAlign:t,title:r,footnote:n,image:i,imageOverlay:o,subtitle:a,backgroundColor:s})=>ni.createElement(QK,{backgroundColor:s},ni.createElement(JK,null,ni.createElement(oY,{source:{uri:i}}),o,!!e.length&&ni.createElement(eY,{align:t},rl(e))),ni.createElement(tY,null,r?ni.createElement(rY,{numberOfLines:r.numberOfLines||2,color:r.color},r.text):null,a?ni.createElement(nY,{numberOfLines:a.numberOfLines||3,color:a.color},a.text):null,n?ni.createElement(iY,{numberOfLines:n.numberOfLines||999,color:n.color},n.text):null)),QK=j.View`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -339,7 +339,7 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
   margin-top: ${F(12)}px;
 `,oY=j.Image.attrs({resizeMode:"cover"})`
   flex: 1;
-`,dN=XK;var ii=m(L());var aY=({tags:e,tagAlign:t,title:r,footnote:n,subtitle:i,image:o,backgroundColor:a})=>ii.createElement(sY,{backgroundColor:a},ii.createElement(lY,null,ii.createElement(fY,{source:{uri:o}}),!!e.length&&ii.createElement(uY,{align:t},rl(e))),ii.createElement(cY,null,n?ii.createElement(hY,{numberOfLines:n.numberOfLines||1,color:n.color},n.text):null,r?ii.createElement(dY,{numberOfLines:r.numberOfLines||3,color:r.color},r.text):null,i?ii.createElement(pY,{numberOfLines:i.numberOfLines||2,color:i.color},i.text):null)),sY=j.View`
+`,dN=XK;var ii=m(L());var aY=({tags:e,tagAlign:t,title:r,footnote:n,subtitle:i,image:o,imageOverlay:a,backgroundColor:s})=>ii.createElement(sY,{backgroundColor:s},ii.createElement(lY,null,ii.createElement(fY,{source:{uri:o}}),a,!!e.length&&ii.createElement(uY,{align:t},rl(e))),ii.createElement(cY,null,n?ii.createElement(hY,{numberOfLines:n.numberOfLines||1,color:n.color},n.text):null,r?ii.createElement(dY,{numberOfLines:r.numberOfLines||3,color:r.color},r.text):null,i?ii.createElement(pY,{numberOfLines:i.numberOfLines||2,color:i.color},i.text):null)),sY=j.View`
   flex-direction: row;
   border-radius: ${F(16)}px;
   background-color: ${({backgroundColor:e})=>e};
@@ -370,7 +370,7 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
   margin-top: ${F(2)}px;
 `,hY=j(pc)`
   color: ${({color:e})=>e};
-`,pN=aY;var nl=m(L());var mY=({backgroundColor:e,image:t,title:r,tags:n,tagAlign:i,size:o})=>nl.createElement(vY,{size:o},nl.createElement(yY,{source:{uri:t}}),!!n.length&&nl.createElement(gY,{align:i},rl([n[0]])),nl.createElement(_Y,{backgroundColor:e},r?nl.createElement(CY,{numberOfLines:r.numberOfLines||2,color:r.color},r.text):null)),vY=j.View`
+`,pN=aY;var nl=m(L());var mY=({backgroundColor:e,image:t,imageOverlay:r,title:n,tags:i,tagAlign:o,size:a})=>nl.createElement(vY,{size:a},nl.createElement(yY,{source:{uri:t}}),r,!!i.length&&nl.createElement(gY,{align:o},rl([i[0]])),nl.createElement(_Y,{backgroundColor:e},n?nl.createElement(CY,{numberOfLines:n.numberOfLines||2,color:n.color},n.text):null)),vY=j.View`
   overflow: hidden;
   border-radius: ${F(16)}px;
   height: ${F(160)}px;
@@ -395,7 +395,7 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
   background-color: ${({backgroundColor:e})=>e};
 `,CY=j(Wr).attrs({ellipsizeMode:"tail"})`
   color: ${({color:e})=>e};
-`,u3=mY;var SY=({size:e,tags:t=[],tagAlign:r="start",title:n,subtitle:i,footnote:o,backgroundColor:a=K.white10,image:s,onPress:l,activeOpacity:u})=>{let c=f();return c3.createElement(bY,{onPress:l,activeOpacity:u??1},c3.createElement(c,{size:e,tags:t,tagAlign:t.length===1?`flex-${r}`:"space-between",title:n,subtitle:i,image:s,footnote:o,backgroundColor:a}));function f(){switch(e){case"l":return dN;case"m":return pN;case"s":return u3;case"xs":return u3}}},bY=j.TouchableOpacity`
+`,u3=mY;var SY=({size:e,tags:t=[],tagAlign:r="start",title:n,subtitle:i,footnote:o,backgroundColor:a=K.white10,image:s,imageOverlay:l,onPress:u,activeOpacity:c})=>{let f=d();return c3.createElement(bY,{onPress:u,activeOpacity:c??1},c3.createElement(f,{size:e,tags:t,tagAlign:t.length===1?`flex-${r}`:"space-between",title:n,subtitle:i,image:s,imageOverlay:l,footnote:o,backgroundColor:a}));function d(){switch(e){case"l":return dN;case"m":return pN;case"s":return u3;case"xs":return u3}}},bY=j.TouchableOpacity`
   flex-direction: row;
   width: 100%;
 `,wY=SY;var f3=m(L());Rr();var RY=({type:e,onPress:t,color:r=K.white,backgroundColor:n=K.white10})=>f3.createElement(EY,{backgroundColor:n,onPress:t},f3.createElement($c,{type:e==="increase"?ce.PLUS:ce.MINUS,color:r})),EY=j(fn).attrs({activeOpacity:.8})`
