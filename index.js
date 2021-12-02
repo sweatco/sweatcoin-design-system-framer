@@ -249,7 +249,6 @@ You tried to parse Less with the standard CSS parser; try again with the postcss
 `,TK=j.View`
   position: absolute;
   flex: 1;
-  position: relative;
   justify-content: center;
   align-items: center;
 `,NK=wK;var yf=v(L());var AK=({testID:e,color:t,backgroundColor:r,textColor:n,icon:i,iconPosition:o="left",children:a})=>{let s=i?yf.createElement(MK,null,i):null;return yf.createElement(qp,{theme:{iconPosition:o}},yf.createElement(IK,{backgroundColor:l()},o==="left"&&s,yf.createElement(kK,{testID:e,color:u()},a),o==="right"&&s));function l(){if(t==="custom")return r||K.darkBlue;switch(t){case"dark-blue":return K.darkBlue;case"light-blue":return K.lightBlue;case"white":return K.white}}function u(){if(t==="custom")return n||K.white;switch(t){case"dark-blue":case"light-blue":return K.white;case"white":return K.darkBlue}}},IK=j.View`
